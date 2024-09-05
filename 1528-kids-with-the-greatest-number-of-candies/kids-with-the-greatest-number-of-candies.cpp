@@ -8,7 +8,7 @@ public:
             maxi=max(candies[i],maxi);
             i++;
         }
-        vector<bool> result(n);
+        vector<bool>result(n);
         i=0;
         while(i<n){
             result[i]=(candies[i]+extraCandies >= maxi);
