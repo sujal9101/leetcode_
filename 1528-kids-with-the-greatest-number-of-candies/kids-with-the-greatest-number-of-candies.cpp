@@ -3,12 +3,16 @@ public:
     vector<bool> kidsWithCandies(vector<int>& candies, int extraCandies) {
         int n=candies.size();
         int maxi=INT_MIN;
-        for(int i=0;i<n;i++){
+        int i=0;
+        while(i<n){
             maxi=max(candies[i],maxi);
+            i++;
         }
         vector<bool> result(n);
-        for (int i=0;i<n;i++) {
+        i=0;
+        while(i<n){
             result[i]=(candies[i]+extraCandies >= maxi);
+            i++;
         }
         return result;
     }
