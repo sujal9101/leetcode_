@@ -7,10 +7,12 @@ public:
         string merge="";
         while(i<n||j<m){
             if(i<n){
-                merge=merge+word1[i++];
+                merge=merge+word1[i];
+                i++;
             }
             if(j<m){
-                merge=merge+word2[j++];
+                merge=merge+word2[j];
+                j++;
             }
         }
         return merge;
