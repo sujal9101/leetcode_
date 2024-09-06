@@ -11,7 +11,7 @@ public:
             while(i<j && vowels.find(s[j]) == string::npos) {
                 j--;
             }
-            if (i < j) {
+            if(i < j){
                 swap(s[i], s[j]);
                 i++;
                 j--;
